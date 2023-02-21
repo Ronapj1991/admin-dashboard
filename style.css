@@ -245,7 +245,7 @@ body {
 
 .button-container {
   width: 50%;
-  margin-right: 120px;
+  margin-right: 7%;
   display: flex;
   justify-content: end;
 }
@@ -264,6 +264,7 @@ body {
 .right-bottom {
   background-color: rgba(216, 227, 236, 0.808);
   height: 85%;
+  width: 100%;
 }
 
 .grid-headers {
@@ -273,8 +274,7 @@ body {
 }
 
 .grid-headers .left {
-  border: 1px solid red;
-  width: 69%;
+  width: 60%;
   font-size: 1.1em;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -282,12 +282,70 @@ body {
 }
 
 .grid-headers .right {
-  border: 1px solid blue;
   width: 29%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   font-size: 1.1em;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: rgb(87, 82, 82);
+}
+
+.content-container {
+  width: 94%;
+  height: 90%;
+  margin-left: 2%;
+  display: flex;
+}
+
+.content-container .grid-left {
+  margin-left: 20px;
+  width: 66%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content-box {
+  height: 80%;
+  width: 80%;
+  box-shadow: -10px 2px rgba(217, 155, 38, 0.845);
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.one, .three, .five {
+  margin-left: 10px;
+}
+
+.grid-right {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-right .announcement {
+  width: 100%;
+  height: 50%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px black;
+}
+
+.grid-right > h4 {
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: rgb(87, 82, 82);
+  margin-top: 20px;
+}
+
+.trending {
+  margin-top: 5px;
+  width: 100%;
+  height: 30%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px black;
 }
